@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh"><head><base href="https://labuladong.online/"><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/algo-visualize/style.css"><meta name="theme-color" content="#000000"/><link rel="icon" type="image/png" sizes="32x32" href="/algo-visualize/favicon/logo.png"><link rel="manifest" href="/algo-visualize/favicon/site.webmanifest?v=zX7d5E9bGk"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>移除元素 | labuladong 算法可视化</title><meta name="description" content="力扣题目 27. 移除元素 的算法可视化。"><script defer="defer" src="/algo-visualize/static/js/main.bac1f995.js"></script><link href="/algo-visualize/static/css/main.044a6ffd.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"><p>页面加载失败，请尝试清除浏览器缓存并刷新页面。</p><p>Error occurred when loading the page, please try to clear browser cache and refresh the page.</p></div><script>window.__viz = {
+        data: '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'
+    }</script><div style="display: none"><pre><code class="language-javascript">var removeElement = function(nums, val) {
+    let fast = 0, slow = 0;
+    while (fast &lt; nums.length) {
+        if (nums[fast] !== val) {
+            nums[slow] = nums[fast];
+            // @visualize color *nums[slow] #62d95c
+            slow++;
+        }
+        fast++;
+    }
+    return slow;
+};
+
+let result = removeElement([1,2,3,3,4,5,5], 3);
+</code></pre></div><div id="root"></div><script async src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script><script>window.onerror = function (message, source, lineno, colno, error) {
+        const root = document.getElementById('root');
+        if (!root || !root.innerHTML.trim()) {
+            console.log('window on error:', error, message)
+            document.getElementById('error-message').style.display = 'block';
+        }
+    };
+
+    // MutationObserver to monitor changes in #root
+    const observer = new MutationObserver(function (mutations) {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim()) {
+            document.getElementById('error-message').style.display = 'none';
+            window.onerror = null; // Remove the window.onerror listener
+            observer.disconnect(); // Stop observing
+        }
+    });
+
+    // Observe changes in the child list of #root
+    observer.observe(document.getElementById('root'), {
+        childList: true,
+        subtree: true
+    });</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6f08fc385f864c1ba2f3a406756e83c1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>

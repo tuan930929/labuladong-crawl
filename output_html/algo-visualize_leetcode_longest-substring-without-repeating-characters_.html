@@ -1,0 +1,55 @@
+<!doctype html><html lang="zh"><head><base href="https://labuladong.online/"><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/algo-visualize/style.css"><meta name="theme-color" content="#000000"/><link rel="icon" type="image/png" sizes="32x32" href="/algo-visualize/favicon/logo.png"><link rel="manifest" href="/algo-visualize/favicon/site.webmanifest?v=zX7d5E9bGk"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>无重复字符的最长子串 | labuladong 算法可视化</title><meta name="description" content="力扣题目 3. 无重复字符的最长子串 的算法可视化。"><script defer="defer" src="/algo-visualize/static/js/main.bac1f995.js"></script><link href="/algo-visualize/static/css/main.044a6ffd.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"><p>页面加载失败，请尝试清除浏览器缓存并刷新页面。</p><p>Error occurred when loading the page, please try to clear browser cache and refresh the page.</p></div><script>window.__viz = {
+        data: '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'
+    }</script><div style="display: none"><pre><code class="language-javascript">var lengthOfLongestSubstring = function(s) {
+    s = s.split('');
+    let window = new Map();
+
+    let left = 0, right = 0;
+    // @visualize bind s[left] s[right]
+    // 记录结果
+    let res = 0;
+    while (right &lt; s.length) {
+        // @visualize color *s[right] #bc4fa8
+        let c = s[right];
+        right++;
+        // 进行窗口内数据的一系列更新
+        window.set(c, (window.get(c) || 0) + 1);
+        // 判断左侧窗口是否要收缩
+        while (window.get(c) &gt; 1) {
+            // @visualize color *s[left] #unset
+            let d = s[left];
+            left++;
+            // 进行窗口内数据的一系列更新
+            window.set(d, window.get(d) - 1);
+        }
+        // 在这里更新答案
+        res = Math.max(res, right - left);
+    }
+    return res;
+};
+
+let result = lengthOfLongestSubstring(&quot;abcabcbb&quot;);
+</code></pre></div><div id="root"></div><script async src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script><script>window.onerror = function (message, source, lineno, colno, error) {
+        const root = document.getElementById('root');
+        if (!root || !root.innerHTML.trim()) {
+            console.log('window on error:', error, message)
+            document.getElementById('error-message').style.display = 'block';
+        }
+    };
+
+    // MutationObserver to monitor changes in #root
+    const observer = new MutationObserver(function (mutations) {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim()) {
+            document.getElementById('error-message').style.display = 'none';
+            window.onerror = null; // Remove the window.onerror listener
+            observer.disconnect(); // Stop observing
+        }
+    });
+
+    // Observe changes in the child list of #root
+    observer.observe(document.getElementById('root'), {
+        childList: true,
+        subtree: true
+    });</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6f08fc385f864c1ba2f3a406756e83c1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>

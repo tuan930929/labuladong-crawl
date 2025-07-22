@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh"><head><base href="https://labuladong.online/"><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/algo-visualize/style.css"><meta name="theme-color" content="#000000"/><link rel="icon" type="image/png" sizes="32x32" href="/algo-visualize/favicon/logo.png"><link rel="manifest" href="/algo-visualize/favicon/site.webmanifest?v=zX7d5E9bGk"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>相交链表 | labuladong 算法可视化</title><meta name="description" content="力扣题目 160. 相交链表 的算法可视化。"><script defer="defer" src="/algo-visualize/static/js/main.bac1f995.js"></script><link href="/algo-visualize/static/css/main.044a6ffd.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"><p>页面加载失败，请尝试清除浏览器缓存并刷新页面。</p><p>Error occurred when loading the page, please try to clear browser cache and refresh the page.</p></div><script>window.__viz = {
+        data: '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'
+    }</script><div style="display: none"><pre><code class="language-javascript">var getIntersectionNode = function(headA, headB) {
+    // p1 指向 A 链表头结点，p2 指向 B 链表头结点
+    let p1 = headA, p2 = headB;
+    while (p1 !== p2) {
+        // @visualize color *p1 #99CCFF
+        // @visualize color *p2 #99CC66
+        // p1 走一步，如果走到 A 链表末尾，转到 B 链表
+        if (p1 === null) {
+            p1 = headB;
+        } else {
+            p1 = p1.next;
+        }
+        // p2 走一步，如果走到 B 链表末尾，转到 A 链表
+        if (p2 === null) {
+            p2 = headA;
+        } else {
+            p2 = p2.next;
+        }
+    }
+    return p1;
+};
+
+
+let headA = LinkedList.createHead([1,3,5,7,9])
+let headB = LinkedList.createHead([2,4])
+headB.next.next = headA.next.next.next
+
+let result = getIntersectionNode(headA, headB)
+</code></pre></div><div id="root"></div><script async src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script><script>window.onerror = function (message, source, lineno, colno, error) {
+        const root = document.getElementById('root');
+        if (!root || !root.innerHTML.trim()) {
+            console.log('window on error:', error, message)
+            document.getElementById('error-message').style.display = 'block';
+        }
+    };
+
+    // MutationObserver to monitor changes in #root
+    const observer = new MutationObserver(function (mutations) {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim()) {
+            document.getElementById('error-message').style.display = 'none';
+            window.onerror = null; // Remove the window.onerror listener
+            observer.disconnect(); // Stop observing
+        }
+    });
+
+    // Observe changes in the child list of #root
+    observer.observe(document.getElementById('root'), {
+        childList: true,
+        subtree: true
+    });</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6f08fc385f864c1ba2f3a406756e83c1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>

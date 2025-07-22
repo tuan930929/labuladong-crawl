@@ -1,0 +1,82 @@
+<!doctype html><html lang="zh"><head><base href="https://labuladong.online/"><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="/algo-visualize/style.css"><meta name="theme-color" content="#000000"/><link rel="icon" type="image/png" sizes="32x32" href="/algo-visualize/favicon/logo.png"><link rel="manifest" href="/algo-visualize/favicon/site.webmanifest?v=zX7d5E9bGk"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>最小覆盖子串 | labuladong 算法可视化</title><meta name="description" content="力扣题目 76. 最小覆盖子串 的算法可视化。"><script defer="defer" src="/algo-visualize/static/js/main.bac1f995.js"></script><link href="/algo-visualize/static/css/main.044a6ffd.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"><p>页面加载失败，请尝试清除浏览器缓存并刷新页面。</p><p>Error occurred when loading the page, please try to clear browser cache and refresh the page.</p></div><script>window.__viz = {
+        data: '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'
+    }</script><div style="display: none"><pre><code class="language-javascript">var minWindow = function(s, t) {
+    // 把 s 转换为字符数组方便可视化
+    s = s.split('');
+
+    let need = new Map();
+    let window = new Map();
+    for (let c of t) {
+        need.set(c, (need.get(c) || 0) + 1);
+    }
+
+    let left = 0, right = 0;
+    // @visualize bind s[left] s[right]
+    let valid = 0;
+    // 记录最小覆盖子串的起始索引及长度
+    let start = 0, len = Number.MAX_VALUE;
+
+    while (right &lt; s.length) {
+        // c 是将移入窗口的字符
+        // @visualize color *s[right] #bc4fa8
+        let c = s[right];
+        // 右移窗口
+        right++;
+        // 进行窗口内数据的一系列更新
+        if (need.has(c)) {
+            window.set(c, (window.get(c) || 0) + 1);
+            if (window.get(c) == need.get(c)) {
+                valid++;
+            }
+        }
+
+        // 判断左侧窗口是否要收缩
+        while (valid == need.size) {
+            // 在这里更新最小覆盖子串
+            if (right - left &lt; len) {
+                start = left;
+                len = right - left;
+            }
+            // d 是将移出窗口的字符
+            let d = s[left];
+            // 左移窗口
+            // @visualize color *s[left] #unset
+            left++;
+            // 进行窗口内数据的一系列更新
+            if (need.has(d)) {
+                if (window.get(d) == need.get(d)) {
+                    valid--;
+                }
+                window.set(d, window.get(d) - 1);
+            }
+        }
+    }
+    // 返回最小覆盖子串
+    return len == Number.MAX_VALUE ? &quot;&quot; : s.slice(start, start + len).join('');
+};
+
+let result = minWindow(&quot;ADOBECODEBANC&quot;, &quot;ABC&quot;);
+</code></pre></div><div id="root"></div><script async src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script><script>window.onerror = function (message, source, lineno, colno, error) {
+        const root = document.getElementById('root');
+        if (!root || !root.innerHTML.trim()) {
+            console.log('window on error:', error, message)
+            document.getElementById('error-message').style.display = 'block';
+        }
+    };
+
+    // MutationObserver to monitor changes in #root
+    const observer = new MutationObserver(function (mutations) {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim()) {
+            document.getElementById('error-message').style.display = 'none';
+            window.onerror = null; // Remove the window.onerror listener
+            observer.disconnect(); // Stop observing
+        }
+    });
+
+    // Observe changes in the child list of #root
+    observer.observe(document.getElementById('root'), {
+        childList: true,
+        subtree: true
+    });</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6f08fc385f864c1ba2f3a406756e83c1","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body></html>
